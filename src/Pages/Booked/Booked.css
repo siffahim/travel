@@ -1,0 +1,11 @@
+.form-container{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.form-container input{
+    width: 80%;
+    height: 44px;
+    display: block;
+    margin-bottom: 10px;
+}

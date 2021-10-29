@@ -1,16 +1,24 @@
 .header{
     padding: 15px 0;
-     background-color:#130f40;
-     color: #fff;
+    background-color:#130f40;
+    color: #fff;
 }
 .item{
     text-decoration: none;
     color: #fff !important ;
-    padding: 9px 15px;
+    padding: 9px 16px;
     border-radius: 3px;
     margin-right: 10px;
 }
 .item:hover{
     background-color:#fe8403;
     color: #fff;
+}
+.btn-fix{
+    border: none;
+    background-color: #fe8403;
+    padding: 8px 15px !important;
+    border-radius: 5px;
+    color: #fff !important;
+    margin-left: 5px;
 }

@@ -8,7 +8,7 @@ const Header = () => {
     const {user,logOut} = useAuth();
     console.log(user)
     return (
-        <Navbar  className='item'expand="lg" className='px-3 header'>
+        <Navbar variant='dark'  className='item'expand="lg" className='px-3 header'>
                 <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className='justify-content-center'>
@@ -27,7 +27,7 @@ const Header = () => {
                         </div>
                     }
                     {
-                        user.email ? <button onClick={logOut} className='btn-regular'><i className="fas fa-sign-out-alt"></i> Logout</button> : <Nav.Link as={Link} to="/login" className='item'>Login</Nav.Link>
+                        user.email ? <button onClick={logOut} className='btn-fix'><i className="fas fa-sign-out-alt"></i> Logout</button> : <Nav.Link as={Link} className='btn-fix' to="/login">Login</Nav.Link>
                     }
                     </Nav>
                 </Navbar.Collapse>

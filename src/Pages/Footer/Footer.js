@@ -12,10 +12,10 @@ const Footer = () => {
                     <button className='btn-regular'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
                 </ul>
                 <ul>
-                    <h2>QUICK LINKS</h2>
-                    <li><i class="fas fa-angle-double-right"></i> Home</li>
+                    <h2>Services</h2>
                     <li><i class="fas fa-angle-double-right"></i> About Us</li>
-                    <li><i class="fas fa-angle-double-right"></i> News & Tips</li>
+                    <li><i class="fas fa-angle-double-right"></i> How it work</li>
+                    <li><i class="fas fa-angle-double-right"></i> Our Services</li>
                     <li><i class="fas fa-angle-double-right"></i> Events</li>
                     <li><i class="fas fa-angle-double-right"></i> Our Packages</li>
                     <li><i class="fas fa-angle-double-right"></i> FQA</li>

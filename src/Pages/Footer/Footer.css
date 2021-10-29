@@ -4,7 +4,7 @@
     grid-template-columns:2fr 1fr 2fr;
     grid-gap: 15px;
     padding: 10px;
-    background-color:#050505c2;
+    background-color:#182e6bc2;
     color: #dcdde1;
 }
 .footer-text{
@@ -23,7 +23,6 @@
     position: relative;
     z-index: 99;
 }
-
 .btn-regular:before{
     content: '';
     width: 0%;
@@ -49,6 +48,9 @@ li{
     color:#fe8403;
     margin-right: 5px;
 }
+.text-custom{
+    color:#fe8403;
+}
 .b{
     color: #fff;
 }
@@ -66,4 +68,12 @@ li{
     display: flex;
     align-items: center;
     font-size: 2em;
+
+
+}
+
+@media only screen and (max-width:688px){
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
