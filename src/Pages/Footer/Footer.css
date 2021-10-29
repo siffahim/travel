@@ -1,4 +1,5 @@
 .footer-container{
+    background-size: cover;
     display: grid;
     grid-template-columns:2fr 1fr 2fr;
     grid-gap: 15px;
@@ -22,6 +23,7 @@
     position: relative;
     z-index: 99;
 }
+
 .btn-regular:before{
     content: '';
     width: 0%;
@@ -35,6 +37,7 @@
 .btn-regular:hover:before{
     background-color:#130f40;
     width: 100%;
+    
 }
 ul{
     list-style-type: none;
@@ -42,7 +45,7 @@ ul{
 li{
     margin: 10px 0;
 }
-.fas{
+.footer-container .fas{
     color:#fe8403;
     margin-right: 5px;
 }
@@ -50,7 +53,7 @@ li{
     color: #fff;
 }
 .footer-copyright{
-    background-color: #181818;
+    background-color:#130f40;
     color: #dcdde1;
     padding:2px 10px;
     display: flex;
