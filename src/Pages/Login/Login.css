@@ -1,0 +1,18 @@
+.login-container{
+    box-shadow: 0 0 5px rgb(0,0,0,0.4);
+    padding:100px 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.icon-content{
+    width:350px;
+    border: 1px solid rgb(189, 185, 185);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 30px;
+    background:#fff;
+}
+.login-text{
+    margin-left: 80px;
+}
