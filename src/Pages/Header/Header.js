@@ -2,13 +2,16 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import logo from '../../image/logo.png';
 import './Header.css';
 
 const Header = () => {
     const {user,logOut} = useAuth();
     return (
-        <Navbar variant='dark'  className='item'expand="lg" className='px-3 header'>
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar variant='dark'  className='item'expand="lg" className='header px-3'>
+                <Navbar.Brand as={Link} to="/home">
+                <img width="200px" src={logo} alt="" />
+                </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className='justify-content-center'>
                     <Nav className="ms-auto">

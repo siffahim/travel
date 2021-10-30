@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import logo from '../../image/logo-icon.png';
 import Booked from '../Booked/Booked';
 
 const Booking = () => {
@@ -15,7 +16,10 @@ const Booking = () => {
     }, [])
     return (
         <div>
-            <h2>Booking.com {bookingId}</h2>
+            <p className='text-center text-muted mb-4'>
+                <img width='100px' src={logo} alt="" />
+                <p>We make dreams come true!</p>
+            </p>
             <Booked
                 service={service}
             >

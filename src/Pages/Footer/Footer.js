@@ -1,5 +1,6 @@
 
 import React from 'react';
+import logo from '../../image/logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -7,8 +8,8 @@ const Footer = () => {
         <div>
             <div className='footer-container'>
                 <ul>
-                    <img src='image/logo.png' alt="" />
-                    <p>Your Transformation is our passion. We are your personal trainers, your nutritionist, your supplement expert, your lifting partner, your support group,. We Provide the technology, tools and products you need to burn fat, build muscle, and become your best self.</p>
+                    <img width='200px' src={logo} alt="" />
+                    
                     <button className='btn-regular'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
                 </ul>
                 <ul>

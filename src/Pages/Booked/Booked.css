@@ -1,7 +1,5 @@
 .form-container{
     width: 100%;
-    margin: 0 auto;
-    
 }
 .form-container input{
     width: 80%;
@@ -14,4 +12,13 @@
     width: 70%;
     height: 40px;
     margin-top: 10px;
+}
+.card-detail{
+    height: 310px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 3px;
+}
+.card-detail img{
+    height: 300px;
 }

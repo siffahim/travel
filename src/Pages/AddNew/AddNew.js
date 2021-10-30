@@ -37,7 +37,10 @@ const AddNew = () => {
                             <input type='number' {...register("time", { required: true })} placeholder="Day" />
                             {errors.time && <span className='text-danger'>This field is required</span>}
 
-                            <input {...register("url", { required: true })} placeholder="img-url" />
+                            <input type='number' {...register("star", { required: true })} placeholder="Review out of 5" />
+                            {errors.star && <span className='text-danger'>This field is required</span>}
+
+                            <input defaultValue='https://www.theblondeabroad.com/wp-content/uploads/2018/06/in-California-3.jpg' {...register("url", { required: true })} placeholder="img-url" />
                             {errors.url && <span className='text-danger'>This field is required</span>}
 
                             <input type="submit" className='btn-regular' value='Add' />
