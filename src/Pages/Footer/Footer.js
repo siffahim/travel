@@ -13,7 +13,7 @@ const Footer = () => {
                     <button className='btn-regular'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
                 </ul>
                 <ul>
-                    <h2>Services</h2>
+                    <p className='fs-5 fw-bold'>Services</p>
                     <li><i class="fas fa-angle-double-right"></i> About Us</li>
                     <li><i class="fas fa-angle-double-right"></i> How it work</li>
                     <li><i class="fas fa-angle-double-right"></i> Our Services</li>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <li><i class="fas fa-angle-double-right"></i> Schedule</li>
                 </ul>
                 <ul>
-                    <h2>CONTACT US</h2>
+                    <p className='fs-5 fw-bold'>Contact Us</p>
                     <li><i class="fas fa-map-marker-alt"></i> Mirpur-12,Doctor Goli,Road-N2.Dhaka,Bangladesh</li>
                     <li><i class="fas fa-phone-alt"></i> +00965321402</li>
                     <li><i class="fas fa-envelope"></i> fitnessbd2021@gmail.com</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='footer-copyright'>
-                <p>Travio © 2021 All Right Reserved</p>
+                <p>World Tourism © 2021</p>
                 <ul className='footer-icon'>
                     <li className='me-2 icon'><i className="fab fa-facebook-square"></i></li>
                     <li className='me-2 icon'><i className="fab fa-twitter-square"></i></li>

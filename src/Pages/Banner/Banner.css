@@ -1,7 +1,29 @@
-.banner-container{
-    width: 100%;
-    height: 100vh;
-    background:url('../../image/travel (1).jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.heder-banner-background {
+  background-image: linear-gradient(#20202031, #03030328),
+    url("https://eqx-assets-prod.imgix.net/images/d9c7ae4a2c9348e7a60fc93d470d9fe2-a03fcfd9cc2c41b4bc5c3fd59e073dde-img_6170-20.jpg?auto=format&fit=crop&ixlib=react-8.6.4&w=1946");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 86vh;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.input input,select {
+  padding: 10px;
+  font-size: 15px;
+  width: 30%;
+  height: 50px;
+  outline: none;
+  border: 1px solid #c3c3c3;
+}
+.input button {
+  background: #fe8403;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  outline: none;
+  transition: 0.8s;
 }
