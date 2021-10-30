@@ -7,7 +7,7 @@ import './Booked.css';
 const Booked = (props) => {
     const { url } = props.service;
     const { user } = useAuth();
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors },reset } = useForm();
     const onSubmit = data => {
         fetch('http://localhost:5000/booking', {
             method: 'POST',
@@ -15,6 +15,12 @@ const Booked = (props) => {
                 'content-type':'application/json'
             },
             body:JSON.stringify(data)
+        }).then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert('Successfully Booking')
+                    reset()
+            }
         })
     };
     return (

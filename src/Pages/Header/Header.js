@@ -6,7 +6,6 @@ import './Header.css';
 
 const Header = () => {
     const {user,logOut} = useAuth();
-    console.log(user)
     return (
         <Navbar variant='dark'  className='item'expand="lg" className='px-3 header'>
                 <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -14,12 +13,14 @@ const Header = () => {
                 <Navbar.Collapse className='justify-content-center'>
                     <Nav className="ms-auto">
                         <Nav.Link as={Link} to="/home" className='item'>Home</Nav.Link>
-                        <Nav.Link as={Link} to="/features" className='item'>Features</Nav.Link>
                     {
-                        user.email && <Nav.Link href="#features" className='item'>My Order</Nav.Link>
+                        user.email && <Nav.Link as={Link} to="/features" className='item'>My Booking</Nav.Link>
                     }
                     {
-                        user.email && <Nav.Link href="#features" className='item'>Manage order</Nav.Link>
+                        user.email && <Nav.Link as={Link} to="/manageBooking" className='item'>Booking List</Nav.Link>
+                    }
+                    {
+                        user.email && <Nav.Link as={Link} to="/addNew" className='item'>Add New</Nav.Link>
                     }
                     {
                         user.displayName && <div>

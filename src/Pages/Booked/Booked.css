@@ -9,3 +9,9 @@
     display: block;
     margin-bottom: 10px;
 }
+
+.form input{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+}
