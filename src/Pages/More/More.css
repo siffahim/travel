@@ -1,0 +1,12 @@
+.album{
+    margin-bottom: 50px;
+}
+.album img{
+    border-radius: 10px;
+}
+.text-album{
+    margin-top: -60px;
+    color: white;
+    line-height: 15px;
+    padding-left:10px;
+}

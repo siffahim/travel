@@ -1,0 +1,25 @@
+.rank-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.rank-icon{
+    width: 80px;
+    height: 80px;
+    margin:10px auto !important;
+    background-color:#fe8403;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .1s;
+}
+.rank-icon:hover{
+    box-shadow: 0 0 10px #fe8403;
+    transform: scale(1.1);
+}
+.rank{
+    font-size: 2em;
+    color: #fff;
+}
