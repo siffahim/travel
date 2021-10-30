@@ -9,6 +9,7 @@ import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import ManageBooking from './Pages/ManageBooking/ManageBooking';
+import MyBook from './Pages/MyBook/MyBook,';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
@@ -36,6 +37,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/addNew'>
             <AddNew />
+          </PrivateRoute>
+          <PrivateRoute path='/myBook'>
+            <MyBook />
           </PrivateRoute>
           <Route path='*'>
             <NotFound />

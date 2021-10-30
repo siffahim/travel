@@ -1,5 +1,4 @@
 import React from 'react';
-import banner from '../../image/banner.png';
 import './Banner.css';
 
 const Banner = () => {
@@ -14,7 +13,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className='col-md-6 col-12'>
-                    <img src={banner} className='img-fluid' alt="" />
+                    {/* <img src={banner} className='img-fluid' alt="" /> */}
                 </div>
             </div>
         </div>

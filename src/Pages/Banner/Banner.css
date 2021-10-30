@@ -1,7 +1,7 @@
 .banner-container{
     width: 100%;
-    background:url('https://siffahim.github.io/travel-zone/image/travle01.jpg');
+    height: 100vh;
+    background:url('../../image/travel (1).jpg');
     background-size: cover;
-    background-position:center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
 }

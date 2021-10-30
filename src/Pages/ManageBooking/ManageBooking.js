@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
+import ManageCard from '../ManageCard/ManageCard';
 
 const ManageBooking = () => {
     const [users, setUsers] = useState([]);
-    const [pan,setPan] = useState(false)
+    const[number, setNumber] = useState(0)
     useEffect(() => {
         const user = async () => {
            const res = await fetch('http://localhost:5000/booking');
@@ -12,37 +13,8 @@ const ManageBooking = () => {
            setUsers(data)
         }
         user()
-    }, [])
+    }, [number])
     
-    //delete
-    const handleDelete = id => {
-        const url = `http://localhost:5000/booking/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    alert('Succesfully Deleted');
-                    const remaining = users.filter(user => user._id !== id);
-                    setUsers(remaining)
-                }
-            })
-    }
-    //delete btn style 
-    const btnDelete = {
-        border: 'none',
-        backgroundColor:"#fe8403",
-        color: "#fff",
-        fontSize: "17px",
-        borderRadius: "3px"
-    }
-
-    //check
-    const handleChange = e => {
-        const task = e.target.checked;
-        setPan(task)
-    }
     return (
         <div className='m-5 p-2 shadow'>
             <Container>
@@ -60,16 +32,12 @@ const ManageBooking = () => {
                     </thead>
                     <tbody>
                         {
-                            users.map(user => <tr>
-                                <td>{user.name}</td>
-                                <td>{user.email}</td>
-                                <td>{user.from}</td>
-                                <td>{user.to}</td>
-                                <td>{pan ? 'Approved': user.status}</td>
-                                <td><input className="form-check-input" type="checkbox" onChange={handleChange} /></td>
-                                <td><button style={btnDelete} onClick={() => handleDelete(user._id)}><i className="fas fa-trash-alt"></i></button></td>
-                            </tr>)
-                        }
+                            users.map(user => <ManageCard
+                                key={user._id}
+                                user={user}
+                                setNumber={setNumber}
+                            ></ManageCard>
+                            )}
                     </tbody>
                 </Table>
             </Container>
