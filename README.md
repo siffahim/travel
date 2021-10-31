@@ -42,7 +42,7 @@ I'm a full stack developer...
 
 ## Screenshot
 
-![App Screenshot](https://i.ibb.co/jZLRLGR/screencapture-localhost-3000-home-2021-10-20-15-50-01.png)
+![App Screenshot](https://i.ibb.co/6YR8n4W/Tourism.png)
 
 
 
