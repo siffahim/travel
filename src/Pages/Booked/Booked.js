@@ -43,7 +43,7 @@ const Booked = (props) => {
                                 />
                                 <p className='text-muted'><i class="far fa-clock text-custom"></i> {time}D</p>
                                 <p className='text-muted'>
-                                    The travel and tourism industry is gaining momentum, and it has never been more lucrative. In addition to that, there are various business opportunities arising.
+                                    The travel and tourism industry is gaining momentum.it has never been more lucrative.Wherever you go,make yourself at home.
                                 </p>
                                 <button className='btn-regular'>Learn More</button>
                             </div>
