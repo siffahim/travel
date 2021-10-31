@@ -36,7 +36,9 @@ I'm a full stack developer...
  [Portfolio](https://siffahim.github.io/developer-portfolio/)
 
 
-## Screenshot
+## Screenshots
 
-[App Screenshot](https://i.ibb.co/6YR8n4W/Tourism.png)
+![App Screenshot](https://i.ibb.co/6YR8n4W/Tourism.png)
+
+
 
