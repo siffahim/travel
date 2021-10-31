@@ -23,11 +23,11 @@ const AddNew = () => {
     };
     return (
         <>
-            <p className='text-center text-muted'>
+            <p className='text-center text-muted' data-aos="fade-up">
                 <img width='100px' src={logo} alt="" />
                 <p>We make dreams come true!</p>
             </p>
-            <div className='form-container d-flex align-items-center justify-content-center'>
+            <div data-aos="fade-up" className='form-container d-flex align-items-center justify-content-center'>
                 <div className='text-center'>
                     <h2 className='fw-bold text-muted'>ADD <span className='text-custom fw-bold'>TRAVEL</span> DESTINATION</h2>
                     <p className='text-muted'>Wherever you go,make yourself at home</p>

@@ -30,7 +30,7 @@ const AddToCart = ({user,setNumber}) => {
         }
     }
     return (
-        <div className='row g-0 custom-card'>
+        <div className='row g-0 custom-card' data-aos="fade-up">
             <div className='col-md-4 col-12'>
                 <img src={url} alt="" />
             </div>

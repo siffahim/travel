@@ -1,4 +1,7 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AddNew from './Pages/AddNew/AddNew';
@@ -13,8 +16,12 @@ import MyBook from './Pages/MyBook/MyBook,';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
-
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  },[])
   return (
     <AuthProvider>
       <Router>

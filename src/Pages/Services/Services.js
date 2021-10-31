@@ -17,7 +17,7 @@ const Services = () => {
     },[])
     return (
         <Container>
-            <div className='mt-5'>
+            <div className='mt-5' data-aos="fade-up">
                 <h3 className='text-muted text-center'>POPULAR <span className='text-custom fw-bold'>TRAVELER'S</span> DESTINATION</h3>
                 <p className='text-muted text-center'>CHOOSE YOUR PLACE</p>
             </div>

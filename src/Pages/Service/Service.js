@@ -11,7 +11,7 @@ const Service = (props) => {
         history.push(`/booking/${id}`)
     }
     return (
-        <Col>
+        <Col data-aos="fade-up">
             <Card className='card-container'>
                 <Card className='photo'>
                     <Card.Img src={url} alt="" />

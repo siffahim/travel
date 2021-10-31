@@ -10,9 +10,9 @@ import './More.css';
 const More = () => {
     return (
         <Container>
-            <p className='fs-2 text-center mt-5 text-muted'>BEST <span className='text-custom fw-bold'>TRAVELER'S</span> SHARED PHOTOS</p>
-            <p className='text-center text-muted fw-bold fs-5 mb-4'>ALL ON ONE TOUCH</p>
-            <div className='album'>
+            <p className='fs-2 text-center mt-5 text-muted' data-aos="fade-up">BEST <span className='text-custom fw-bold'>TRAVELER'S</span> SHARED PHOTOS</p>
+            <p className='text-center text-muted fw-bold fs-5 mb-4' data-aos="fade-up">ALL ON ONE TOUCH</p>
+            <div className='album' data-aos="fade-up">
                 <div className='row'>
                     <div className='col-md-6 col-12'>
                         <img className='img-fluid mb-2' src={img1} alt="" />

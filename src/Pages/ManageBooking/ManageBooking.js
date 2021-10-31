@@ -18,7 +18,7 @@ const ManageBooking = () => {
     
     return (
         <Container>
-            <div className="table-responsive my-4 p-3 shadow rounded">
+            <div className="table-responsive my-4 p-3 shadow rounded" data-aos="fade-up">
                 <table className='table'>
                     <thead>
                         <tr>

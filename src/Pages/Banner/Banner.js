@@ -7,7 +7,7 @@ const Banner = () => {
         <>
             <div className="heder-banner-background">
                 <Container>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-up">
                         <div className='col-12'>
                                 <div className='pt-5'>
                                     <h1 className='fw-bold mt-4 text-white'><span className='text-custom'>TRAVEL</span> FOR THOSE <br /> WHO WANT IT ALL</h1>
