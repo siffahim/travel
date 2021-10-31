@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../image/google1.png';
+import logo2 from '../../image/logo-icon.png';
 import './Login.css';
 
 const Login = () => {
@@ -23,10 +24,15 @@ const Login = () => {
         })
     }
     return (
-        <div className='d-flex justify-content-center p-5'>
+        <>
+            <div className='d-flex justify-content-center mb-5' data-aos="fade-up">
             <div className='row'>
-                <div className='col-12 col-md-12'>
-                    <div className='login-container'>
+                    <div className='col-12 col-md-12'>
+                        <p className='text-center text-muted'>
+                            <img width='100px' src={logo2} alt="" />
+                            <p>We make dreams come true!</p>
+                        </p>
+                        <div className='login-container'>
                         <h5 className='mb-5'>Login With</h5>
                         <button className='icon-content' onClick={handleGoogleSignin}>
                             <img style={{ width: '25px' }} src={logo} alt="" />
@@ -37,6 +43,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
