@@ -6,7 +6,7 @@ import useAuth from '../../Hooks/useAuth';
 import './Booked.css';
 
 const Booked = (props) => {
-    const { url,name,time,star,_id } = props.service;
+    const { url,name,time,star } = props.service;
     const { user } = useAuth();
     const { register, handleSubmit, formState: { errors },reset } = useForm();
     const onSubmit = data => {
@@ -15,7 +15,7 @@ const Booked = (props) => {
             headers: {
                 'content-type':'application/json'
             },
-            body:JSON.stringify({data,_id})
+            body:JSON.stringify({data,url})
         }).then(res => res.json())
             .then(data => {
                 if (data.insertedId) {

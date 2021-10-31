@@ -1,28 +1,40 @@
 import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
+import AddToCart from '../AddToCart/AddToCart';
+import './MyBook.css';
 
 const MyBook = () => {
     const [users, setUsers] = useState([]);
     const { user } = useAuth();
-    const email = user.email;
+    const [number, setNumber] = useState(0)
+
+    const  email= {
+        email: user.email
+    }
     useEffect(() => {
-        const user = async () => {
-            const res = await fetch('http://localhost:5000/booking/byEmail', {
-                method: 'Post',
-                headers: {
-                    'headers':'application/json'
-                },
-                body:JSON.stringify(email)
-            });
-            const data = await res.json();
-            console.log(data)
-        }
-        user()
-    }, [])
+        fetch('http://localhost:5000/booking/email', {
+            method: 'POST',
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(email)
+        }).then(res => res.json())
+        .then(data => setUsers(data))
+    }, [number])
+    console.log(users)
     return (
-        <div>
-            <h2>My Booking</h2>
-        </div>
+        <Container>
+            <div className="mybook-container">
+                {
+                    users.map(user => <AddToCart
+                        key={user}
+                        user={user}
+                        setNumber={setNumber}
+                    ></AddToCart>)
+                }
+            </div>
+        </Container>
     );
 };
 
