@@ -14,13 +14,17 @@ t is a single page application made with ReactJS, etc...
 
 
 ## 🔗 Made with
-[![REACT](https://i.ibb.co/BBYs15K/react.png)](https://react.com/)React
-[![Firebase](https://i.ibb.co/D5rCFdq/firebase.png)](https://www.linkedin.com/)Firebase
-[![Node](https://i.ibb.co/nwNmMB6/node.png)](https://firebase.com/)Node Js
-[![MongoDB](https://i.ibb.co/61KkrpZ/mongodb.png)](https://react.com/) MongoDB
-[![Git](https://i.ibb.co/VBd4fqY/git.png)](https://www.linkedin.com/) Git 
-[![Vnial Css](https://i.ibb.co/FVxCgYZ/css.png)](https://www.linkedin.com/) Vnialla Css
-[![Boostrap](https://i.ibb.co/TvhLX98/bootstrap.png)](https://www.linkedin.com/)Boostrap
+ - React Js
+ - React Router
+ - Express Js
+ - Node Js
+ - MongoDb
+ - Firebase
+ - Bootstrap
+ - React Bootstrap
+ - Css
+ - Git
+
 
 ## Website Color
 
