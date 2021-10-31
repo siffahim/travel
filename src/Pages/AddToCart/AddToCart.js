@@ -30,13 +30,13 @@ const AddToCart = ({user,setNumber}) => {
         }
     }
     return (
-        <div className='row gy-2 custom-card'>
+        <div className='row g-0 custom-card'>
             <div className='col-md-4 col-12'>
                 <img src={url} alt="" />
             </div>
             <div className='col-md-7 col-12'>
                 <div className='detail-info'>
-                         <p className='fs-5 fw-bold text-muted'>{country}</p>
+                         <p className='fs-6 mt-2 fw-bold text-muted'>{country}</p>
                         <p className='text-size text-muted'><i className="fas fa-address-card text-custom"></i> {status ? 'Approved' : 'Panding...'}</p>
                         <div className='d-md-flex'>
                             <p className='me-4 text-muted text-size'><i className="fas fa-home text-custom text-size"></i> {from}</p>
