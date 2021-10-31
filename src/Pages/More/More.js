@@ -15,7 +15,7 @@ const More = () => {
             <div className='album'>
                 <div className='row'>
                     <div className='col-md-6 col-12'>
-                        <img className='img-fluid' src={img1} alt="" />
+                        <img className='img-fluid mb-2' src={img1} alt="" />
                         <div className='text-album'>
                             <p className='fs-5 fw-bold text'>United State</p>
                             <p className='fs-6 fw-semi text'>81 Citis</p>

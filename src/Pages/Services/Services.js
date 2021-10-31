@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Spinner } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import Service from '../Service/Service';
 import './Services.css';
 
@@ -26,14 +26,14 @@ const Services = () => {
                  load && <Spinner animation="grow" variant="black" />
                 }
             </div>
-            <div className='service-container'>
+            <Row xs={1} md={3} className="g-2 p-4">
                 {
                     services.map(service => <Service
                         key={service._id}
                         service={service}
                     ></Service>)
                 }
-            </div>
+            </Row>
         </Container>
     );
 };

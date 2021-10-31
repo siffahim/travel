@@ -5,19 +5,22 @@ const ManageCard = ({user, setNumber}) => {
     // const [pan, setPan] = useState(status)
     //delete
     const handleDelete = id => {
-        const url = `http://localhost:5000/booking/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    alert('Succesfully Deleted');
-                    // const remaining = users.filter(user => user._id !== id);
-                    // setUsers(remaining)
-                    setNumber(prev => prev + 1)
-                }
+        const proess = window.confirm('Are you want to Delete?')
+        if (proess) {
+            const url = `http://localhost:5000/booking/${id}`
+            fetch(url, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        alert('Succesfully Deleted');
+                        // const remaining = users.filter(user => user._id !== id);
+                        // setUsers(remaining)
+                        setNumber(prev => prev + 1)
+                    }
+                })
+        }
     }
     //delete btn style 
     const btnDelete = {
@@ -48,7 +51,7 @@ const ManageCard = ({user, setNumber}) => {
             <td>{email}</td>
             <td>{from}</td>
             <td>{to}</td>
-            <td>{status ? 'Approved' : 'Pandding'}</td>
+            <td>{status ? 'Approved' : 'Pandding...'}</td>
             <td><input className="form-check-input" type="checkbox" onChange={handleChange} /></td>
             <td><button style={btnDelete} onClick={() => handleDelete(_id)}><i className="fas fa-trash-alt"></i></button></td>
         </tr>

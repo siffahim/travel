@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import './Service.css';
 
@@ -10,20 +11,20 @@ const Service = (props) => {
         history.push(`/booking/${id}`)
     }
     return (
-        <div>
-            <div className='card-container'>
-                <div className='photo'>
-                    <img src={url} alt="" />
-                </div>
-                <div className='photo-detail'>
+        <Col>
+            <Card className='card-container'>
+                <Card className='photo'>
+                    <Card.Img src={url} alt="" />
+                </Card>
+                <Card.Body className='photo-detail'>
                     <div className='line'>
                         <p className='fs-4 fw-bold text'>{name}</p>
                         <p className='fs-5 fw-semi text'>Starting from ${price}</p>
                     </div>
                     <button onClick={()=> handleBooking(_id)} className='btn-regular btn-custom'>Book Now</button>
-                </div>
-            </div>
-        </div>
+                </Card.Body>
+            </Card>
+        </Col>
     );
 };
 

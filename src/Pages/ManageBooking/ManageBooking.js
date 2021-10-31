@@ -18,17 +18,17 @@ const ManageBooking = () => {
     
     return (
         <Container>
-            <div className="table-responsive my-4 p-3 shadow">
+            <div className="table-responsive my-4 p-3 shadow rounded">
                 <table className='table'>
                     <thead>
                         <tr>
-                            <th className='text-muted fw-normal'>NAME</th>
-                            <th className='text-muted fw-normal'>EMAIL</th>
-                            <th className='text-muted fw-normal'>FROM</th>
-                            <th className='text-muted fw-normal'>TO</th>
-                            <th className='text-muted fw-normal'>STATUS</th>
-                            <th className='text-muted fw-normal'>Check</th>
-                            <th className='text-muted fw-normal'>ACTION</th>
+                            <th className='text-muted fw-normal'>Name</th>
+                            <th className='text-muted fw-normal'>Email</th>
+                            <th className='text-muted fw-normal'>From</th>
+                            <th className='text-muted fw-normal'>To</th>
+                            <th className='text-muted fw-normal'>Status</th>
+                            <th className='text-muted fw-normal'>Action</th>
+                            <th className='text-muted fw-normal'>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -38,7 +38,8 @@ const ManageBooking = () => {
                                 user={user}
                                 setNumber={setNumber}
                             ></ManageCard>
-                            )}
+                            )
+                        }
                     </tbody>
                 </table>
             </div>

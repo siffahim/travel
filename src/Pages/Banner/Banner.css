@@ -1,12 +1,12 @@
 
 .heder-banner-background {
-  background-image: linear-gradient(#20202031, #03030328),
+    width: 100%;
+    height: 80vh;
+  background: linear-gradient(#20202031, #03030328),
     url("https://roam.qodeinteractive.com/wp-content/uploads/2017/08/about-2-title-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  height: 86vh;
 }
 
 
