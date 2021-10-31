@@ -8,7 +8,7 @@ const ManageBooking = () => {
     const [number, setNumber] = useState(0)
     useEffect(() => {
         const user = async () => {
-           const res = await fetch('http://localhost:5000/booking');
+            const res = await fetch('https://fast-falls-53703.herokuapp.com/booking');
            const data = await res.json();
             
            setUsers(data)

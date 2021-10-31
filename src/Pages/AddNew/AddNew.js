@@ -6,7 +6,7 @@ import './AddNew.css';
 const AddNew = () => {
     const { register, handleSubmit, formState: { errors },reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/services', {
+        fetch('https://fast-falls-53703.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'

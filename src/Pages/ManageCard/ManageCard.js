@@ -7,7 +7,7 @@ const ManageCard = ({user, setNumber}) => {
     const handleDelete = id => {
         const proess = window.confirm('Are you want to Delete?')
         if (proess) {
-            const url = `http://localhost:5000/booking/${id}`
+            const url = `https://fast-falls-53703.herokuapp.com/booking/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const ManageCard = ({user, setNumber}) => {
     //check
     const handleChange = e => {
         const task = e.target.checked;
-        fetch('http://localhost:5000/booking', {
+        fetch('https://fast-falls-53703.herokuapp.com/booking', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

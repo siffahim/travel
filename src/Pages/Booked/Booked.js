@@ -10,7 +10,7 @@ const Booked = (props) => {
     const { user } = useAuth();
     const { register, handleSubmit, formState: { errors },reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/booking', {
+        fetch('https://fast-falls-53703.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'

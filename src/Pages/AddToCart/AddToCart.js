@@ -14,7 +14,7 @@ const AddToCart = ({user,setNumber}) => {
     const handleDelete = id => {
         const proess = window.confirm('Are you want to Delete?')
         if (proess) {
-            const url = `http://localhost:5000/booking/${id}`
+            const url = `https://fast-falls-53703.herokuapp.com/booking/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -30,11 +30,11 @@ const AddToCart = ({user,setNumber}) => {
         }
     }
     return (
-        <div className='row g-0 custom-card'>
-            <div className='col-4'>
+        <div className='row gy-2 custom-card'>
+            <div className='col-md-4 col-12'>
                 <img src={url} alt="" />
             </div>
-            <div className='col-7'>
+            <div className='col-md-7 col-12'>
                 <div className='detail-info'>
                          <p className='fs-5 fw-bold text-muted'>{country}</p>
                         <p className='text-size text-muted'><i className="fas fa-address-card text-custom"></i> {status ? 'Approved' : 'Panding...'}</p>

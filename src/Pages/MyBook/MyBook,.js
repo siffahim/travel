@@ -13,7 +13,7 @@ const MyBook = () => {
         email: user.email
     }
     useEffect(() => {
-        fetch('http://localhost:5000/booking/email', {
+        fetch('https://fast-falls-53703.herokuapp.com/booking/email', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
