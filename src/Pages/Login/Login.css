@@ -1,11 +1,11 @@
 .login-container{
     box-shadow: 0 0 5px rgb(0,0,0,0.4);
-    padding:100px 50px;
     text-align: center;
     border-radius: 3px;
+    padding: 100px;
 }
 .icon-content{
-    width:350px;
+    width: 100%;
     border: 1px solid rgb(189, 185, 185);
     display: flex;
     align-items: center;
@@ -13,6 +13,13 @@
     border-radius: 30px;
     background:#fff;
 }
-.login-text{
-    margin-left: 80px;
+
+
+@media only screen and (max-width:688px){
+    .login-container{
+        padding: 5%;
+    }
+    .icon-content{
+        width: 100%;
+    }
 }

@@ -24,13 +24,17 @@ const Login = () => {
     }
     return (
         <div className='d-flex justify-content-center p-5'>
-            <div className='login-container'>
-                <h5 className='mb-5'>Login With</h5>
-                <button className='icon-content' onClick={handleGoogleSignin}>
-                    <img style={{width:'25px'}} src={logo} alt="" />
-                    <span className='login-text text-muted'>Continue with Google</span>
-                </button>
-                <p className='mt-2'><small>Don't have an account? <Link to='/resgister'>Create an account</Link></small></p>
+            <div className='row'>
+                <div className='col-12 col-md-12'>
+                    <div className='login-container'>
+                        <h5 className='mb-5'>Login With</h5>
+                        <button className='icon-content' onClick={handleGoogleSignin}>
+                            <img style={{ width: '25px' }} src={logo} alt="" />
+                            <span className='login-text text-muted ms-4'>Continue with Google</span>
+                        </button>
+                        <p className='mt-2'><small>Don't have an account? <Link to='/resgister'>Create an account</Link></small></p>
+                    </div>
+                </div>
             </div>
         </div>
     );

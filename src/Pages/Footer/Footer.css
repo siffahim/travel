@@ -71,4 +71,7 @@ li{
     .footer-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .img-foot{
+        width: 250px;
+    }
 }

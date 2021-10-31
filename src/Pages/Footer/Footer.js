@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='footer-container'>
                 <ul>
                     <img width='200px' className='mb-2' src={logo} alt="" /><br/>
-                    <img width='300px' src={gallery} alt="" /><br/>
+                    <img width='300px' className='img-foot' src={gallery} alt="" /><br/>
                     <button className='btn-regular mt-3'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
                 </ul>
                 <ul>
