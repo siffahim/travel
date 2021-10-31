@@ -1,5 +1,6 @@
 
 import React from 'react';
+import gallery from '../../image/footer-img.png';
 import logo from '../../image/logo.png';
 import './Footer.css';
 
@@ -8,9 +9,9 @@ const Footer = () => {
         <div>
             <div className='footer-container'>
                 <ul>
-                    <img width='200px' src={logo} alt="" />
-                    
-                    <button className='btn-regular'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
+                    <img width='200px' className='mb-2' src={logo} alt="" /><br/>
+                    <img width='300px' src={gallery} alt="" /><br/>
+                    <button className='btn-regular mt-3'>BOOK NOW <i class="fas fa-angle-right b"></i></button>
                 </ul>
                 <ul>
                     <p className='fs-5 fw-bold'>Services</p>
@@ -26,7 +27,7 @@ const Footer = () => {
                     <p className='fs-5 fw-bold'>Contact Us</p>
                     <li><i class="fas fa-map-marker-alt"></i> Mirpur-12,Doctor Goli,Road-N2.Dhaka,Bangladesh</li>
                     <li><i class="fas fa-phone-alt"></i> +00965321402</li>
-                    <li><i class="fas fa-envelope"></i> fitnessbd2021@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i>worldtourism2021@gmail.com</li>
                     <li><i class="fas fa-clock"></i> Weack Days:05:00-22:00
                         Satardat:04:00-09:00
                         Wednessday:03:00-10:00

@@ -14,14 +14,14 @@ const More = () => {
             <p className='text-center text-muted fw-bold fs-5 mb-4'>ALL ON ONE TOUCH</p>
             <div className='album'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-md-6 col-12'>
                         <img className='img-fluid' src={img1} alt="" />
                         <div className='text-album'>
                             <p className='fs-5 fw-bold text'>United State</p>
                             <p className='fs-6 fw-semi text'>81 Citis</p>
                         </div>
                     </div>
-                    <div className='col-6'>
+                    <div className='col-md-6 col-12'>
                         <div className='row'>
                             <div className='col-6'>
                                 <img className='img-fluid' src={img2} alt="" />

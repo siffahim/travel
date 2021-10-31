@@ -6,7 +6,7 @@ import useAuth from '../../Hooks/useAuth';
 import './Booked.css';
 
 const Booked = (props) => {
-    const { url,name,time,star } = props.service;
+    const { url,name,time,star,_id } = props.service;
     const { user } = useAuth();
     const { register, handleSubmit, formState: { errors },reset } = useForm();
     const onSubmit = data => {
@@ -15,7 +15,7 @@ const Booked = (props) => {
             headers: {
                 'content-type':'application/json'
             },
-            body:JSON.stringify(data)
+            body:JSON.stringify({data,_id})
         }).then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
@@ -26,14 +26,14 @@ const Booked = (props) => {
     };
     return (
         <Container>
-            <div className='row mb-5'>
-                <div className='col-6'>
+            <div className='row gy-4 mb-5'>
+                <div className='col-md-6 col-12'>
                     <div className='card-detail'>
                     <div className='row'>
-                            <div className='col-6'>
+                            <div className='col-md-6 col-12'>
                                 <img className='img-fluid' src={url} alt="" />
                             </div>
-                            <div className='col-6'>
+                            <div className='col-md-6 col-12'>
                                 <p className='fs-5 fw-bold text-muted'>{name}</p>
                                 <Rating
                                     initialRating={star}
@@ -50,13 +50,13 @@ const Booked = (props) => {
                         </div>
                    </div>
                 </div>
-                <div className='col-6 card'>
-                    <h2 className='fw-bold text-custom'>BOOK & TRAVEL</h2>
-                    <p className='text-muted'>Wherever you go,make yourself at home</p>
+                <div className='col-md-6 col-12'>
 
                     {/*-----------------form-----------------*/}
 
                     <div className='form-container mx-auto'>
+                        <h2 className='fw-bold text-custom'>BOOK & TRAVEL</h2>
+                        <p className='text-muted'>Wherever you go,make yourself at home</p>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input type="text" defaultValue={user.displayName} {...register("name")} placeholder="Name" />
                             <input defaultValue={user.email} {...register("email", { required: true })} placeholder="Email" />

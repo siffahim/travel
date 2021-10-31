@@ -18,8 +18,8 @@ const Services = () => {
     return (
         <Container>
             <div className='mt-5'>
-                <h3 className='text-muted'>POPULAR <span className='text-custom fw-bold'>TRAVELER'S</span> DESTINATION</h3>
-                <p className='text-muted'>CHOOSE YOUR PLACE</p>
+                <h3 className='text-muted text-center'>POPULAR <span className='text-custom fw-bold'>TRAVELER'S</span> DESTINATION</h3>
+                <p className='text-muted text-center'>CHOOSE YOUR PLACE</p>
             </div>
             <div className='text-center'>
                 {

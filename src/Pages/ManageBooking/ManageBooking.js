@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import ManageCard from '../ManageCard/ManageCard';
+import './ManageBooking.css';
 
 const ManageBooking = () => {
     const [users, setUsers] = useState([]);
@@ -16,36 +17,32 @@ const ManageBooking = () => {
     }, [number])
     
     return (
-        <div className='m-5 p-2 shadow'>
-            <Container>
-                <div className='row'>
-                    <div className='col-12'>
-                        <Table responsive="sm">
-                            <thead>
-                                <tr>
-                                    <th className='text-muted'>NAME</th>
-                                    <th className='text-muted'>EMAIL</th>
-                                    <th className='text-muted'>FROM</th>
-                                    <th className='text-muted'>TO</th>
-                                    <th className='text-muted'>STATUS</th>
-                                    <th className='text-muted'>Check</th>
-                                    <th className='text-muted'>ACTION</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    users.map(user => <ManageCard
-                                        key={user._id}
-                                        user={user}
-                                        setNumber={setNumber}
-                                    ></ManageCard>
-                                    )}
-                            </tbody>
-                        </Table>
-                    </div>
-                </div>
-            </Container>
-        </div>
+        <Container>
+            <div className="table-responsive my-4 p-3 shadow">
+                <table className='table'>
+                    <thead>
+                        <tr>
+                            <th className='text-muted fw-normal'>NAME</th>
+                            <th className='text-muted fw-normal'>EMAIL</th>
+                            <th className='text-muted fw-normal'>FROM</th>
+                            <th className='text-muted fw-normal'>TO</th>
+                            <th className='text-muted fw-normal'>STATUS</th>
+                            <th className='text-muted fw-normal'>Check</th>
+                            <th className='text-muted fw-normal'>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            users.map(user => <ManageCard
+                                key={user._id}
+                                user={user}
+                                setNumber={setNumber}
+                            ></ManageCard>
+                            )}
+                    </tbody>
+                </table>
+            </div>
+        </Container>
     );
 };
 
