@@ -9,18 +9,18 @@ const MyBook = () => {
     const { user } = useAuth();
     const [number, setNumber] = useState(0)
 
-    const  email= {
+    const email = {
         email: user.email
     }
     useEffect(() => {
-        fetch('https://fast-falls-53703.herokuapp.com/booking/email', {
+        fetch('https://world-tourism-server.onrender.com/booking/email', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
             },
             body: JSON.stringify(email)
         }).then(res => res.json())
-        .then(data => setUsers(data))
+            .then(data => setUsers(data))
     }, [number])
     console.log(users)
     return (

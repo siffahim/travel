@@ -4,22 +4,22 @@ import logo from '../../image/logo-icon.png';
 import './AddNew.css';
 
 const AddNew = () => {
-    const { register, handleSubmit, formState: { errors },reset } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const onSubmit = data => {
-        fetch('https://fast-falls-53703.herokuapp.com/services', {
+        fetch('https://world-tourism-server.onrender.com/services', {
             method: 'POST',
             headers: {
-                'content-type':'application/json'
+                'content-type': 'application/json'
             },
-            body:JSON.stringify(data)
+            body: JSON.stringify(data)
         })
-        .then(res => res.json())
-        .then(data => {
+            .then(res => res.json())
+            .then(data => {
                 if (data.insertedId) {
                     alert('Successfully Added')
                     reset()
                 }
-        })
+            })
     };
     return (
         <>

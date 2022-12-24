@@ -16,21 +16,21 @@ const Rank = () => {
                 </div>
                 <div className='p-2 card' data-aos="fade-up">
                     <div className='rank-icon'>
-                        <i class="fas fa-pen rank"></i>
+                        <i className="fas fa-pen rank"></i>
                     </div>
                     <h5 className='text-muted'>Travel Arragement</h5>
                     <p className='text-muted'>An author bio box is a great way to offer additional context to your visitors and present a more personal image of…</p>
                 </div>
                 <div className='p-2 card' data-aos="fade-up">
                     <div className='rank-icon'>
-                        <i class="far fa-star rank"></i>
+                        <i className="far fa-star rank"></i>
                     </div>
                     <h5 className='text-muted'>Your Private Guide</h5>
                     <p className='text-muted'>An author bio box is a great way to offer additional context to your visitors and present a more personal image of…</p>
                 </div>
                 <div className='p-2 card' data-aos="fade-up">
                     <div className='rank-icon'>
-                        <i class="fas fa-map-marker-alt rank"></i>
+                        <i className="fas fa-map-marker-alt rank"></i>
                     </div>
                     <h5 className='text-muted'>Location Manager</h5>
                     <p className='text-muted'>An author bio box is a great way to offer additional context to your visitors and present a more personal image of…</p>

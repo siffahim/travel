@@ -7,7 +7,7 @@ const Booking = () => {
     const [service, setService] = useState({});
     const { bookingId } = useParams();
     useEffect(() => {
-        const url = `https://fast-falls-53703.herokuapp.com/services/${bookingId}`;
+        const url = `https://world-tourism-server.onrender.com/services/${bookingId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

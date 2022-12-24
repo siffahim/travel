@@ -8,14 +8,14 @@ const ManageBooking = () => {
     const [number, setNumber] = useState(0)
     useEffect(() => {
         const user = async () => {
-            const res = await fetch('https://fast-falls-53703.herokuapp.com/booking');
-           const data = await res.json();
-            
-           setUsers(data)
+            const res = await fetch('https://world-tourism-server.onrender.com/booking');
+            const data = await res.json();
+
+            setUsers(data)
         }
         user()
     }, [number])
-    
+
     return (
         <Container>
             <div className="table-responsive my-4 p-3 shadow rounded" data-aos="fade-up">

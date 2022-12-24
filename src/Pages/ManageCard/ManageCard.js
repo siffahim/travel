@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ManageCard = ({user, setNumber}) => {
+const ManageCard = ({ user, setNumber }) => {
     const { name, email, from, to, status, _id } = user;
     // const [pan, setPan] = useState(status)
     //delete
     const handleDelete = id => {
         const proess = window.confirm('Are you want to Delete?')
         if (proess) {
-            const url = `https://fast-falls-53703.herokuapp.com/booking/${id}`
+            const url = `https://world-tourism-server.onrender.com/booking/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const ManageCard = ({user, setNumber}) => {
     //check
     const handleChange = e => {
         const task = e.target.checked;
-        fetch('https://fast-falls-53703.herokuapp.com/booking', {
+        fetch('https://world-tourism-server.onrender.com/booking', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

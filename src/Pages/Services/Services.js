@@ -8,13 +8,13 @@ const Services = () => {
     const [load, setLoad] = useState(true);
     useEffect(() => {
         const dataLoad = async () => {
-            const res = await fetch('https://fast-falls-53703.herokuapp.com/services');
+            const res = await fetch('https://world-tourism-server.onrender.com/services');
             const data = await res.json();
             setServices(data)
             setLoad(false)
         }
         dataLoad()
-    },[])
+    }, [])
     return (
         <Container>
             <div className='mt-5' data-aos="fade-up">
@@ -23,7 +23,7 @@ const Services = () => {
             </div>
             <div className='text-center'>
                 {
-                 load && <Spinner animation="grow" variant="black" />
+                    load && <Spinner animation="grow" variant="black" />
                 }
             </div>
             <Row xs={1} md={3} className="g-2 p-4">
